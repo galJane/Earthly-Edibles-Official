@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "5f212fac7c0c02cb9959fd65"
+  },
+  "title": "Onion",
+  "price": "0.91",
+  "quantity": "112",
+  "img": "onion.jpg",
+  "description": "Get ready to roast, caramelize, and grill these Onions to absolute perfection!, sale per pound."
+},{
+  "_id": {
+    "$oid": "5f2130275283021714b67368"
+  },
+  "title": "Red Potato",
+  "price": "0.35",
+  "quantity": "140",
+  "img": "redpotato.jpg",
+  "description": "Use red potatoes to create a variety of cooked and baked dishes, sale per pound."
+},{
+  "_id": {
+    "$oid": "5f2130695283021714b67369"
+  },
+  "title": "Tomatos",
+  "price": "0.39",
+  "quantity": "160",
+  "img": "tomato.jpg",
+  "description": "With Tomatoes, it's easy to make a wholesome, delicious meal, sale per pound."
+},{
+  "_id": {
+    "$oid": "5f2130a05283021714b6736a"
+  },
+  "title": "Cucumber  ",
+  "price": "0.69",
+  "quantity": "150",
+  "img": "cucumber.jpg",
+  "description": "Enjoy the fresh, crisp, delicious flavor of Cucumber. "
+},{
+  "_id": {
+    "$oid": "5f2130bc5283021714b6736b"
+  },
+  "title": "Eggplant",
+  "price": "1.59",
+  "quantity": "70",
+  "img": "eggplant.jpg",
+  "description": "Create something wholesome and delicious with Eggplant"
+},{
+  "_id": {
+    "$oid": "5f2130d95283021714b6736c"
+  },
+  "title": "Romaine Lettuce",
+  "price": "1.19",
+  "quantity": "90",
+  "img": "romaine.jpg",
+  "description": "Sturdy dark green leaves with firm ribs down their centers."
+},{
+  "_id": {
+    "$oid": "5f2130f15283021714b6736d"
+  },
+  "title": "Avacado",
+  "price": "0.59",
+  "quantity": "100",
+  "img": "avacado.jpg",
+  "description": "Fresh avocados are great for using in avocado dip, salads and guacamole."
+},{
+  "_id": {
+    "$oid": "5f21310c5283021714b6736e"
+  },
+  "title": "Greenleaf Lettuce",
+  "price": "1.39",
+  "quantity": "110",
+  "img": "greenleaf.jpg",
+  "description": " It has a variety of vitamins and minerals that will provide you with your daily nutritional needs."
+},{
+  "_id": {
+    "$oid": "5f2131945283021714b6736f"
+  },
+  "title": "Broccoli",
+  "price": "1.15",
+  "quantity": "115",
+  "img": "broccoli.jpg",
+  "description": "Delicious when steamed, oven roasted, pan fried, or added to a stir fry or salad."
+},{
+  "_id": {
+    "$oid": "5f2131af5283021714b67370"
+  },
+  "title": "Bell Pepper",
+  "price": "0.79",
+  "quantity": "120",
+  "img": "bellpepper.jpg",
+  "description": "Exceptionally rich in vitamin C and other antioxidants"
+}]

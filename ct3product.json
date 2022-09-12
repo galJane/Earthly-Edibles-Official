@@ -1,0 +1,91 @@
+[{
+    "_id": {
+      "$oid": "5f21d0084d05d43b34694e9f"
+    },
+    "title": "Fruit Rainbow Kabobs",
+    "price": "10.99",
+    "quantity": "20",
+    "img": "FruitRainbowKabobs.jpg",
+    "description": "Comes in package of 10."
+  },{
+    "_id": {
+      "$oid": "5f21d1951480013df87ec541"
+    },
+    "title": "Zucchini,Bell Pepper, and Tomatoes Kabobs",
+    "price": "11.99",
+    "quantity": "20",
+    "img": "ZBTKabobs.jpg",
+    "description": "Comes in package of 10."
+  },{
+    "_id": {
+      "$oid": "5f21d26b1480013df87ec542"
+    },
+    "title": "Soup Veggies Kit",
+    "price": "9.99",
+    "quantity": "15",
+    "img": "SoupVeggieKit.jpg",
+    "description": "Helps cut down the prep time in making your soup."
+  },{
+    "_id": {
+      "$oid": "5f21d45b1480013df87ec543"
+    },
+    "title": "Aguas Frescas Watermelon",
+    "price": "3.89",
+    "quantity": "19",
+    "img": "AFWatermelon.jpg",
+    "description": "Your friends and family will love this refreshing drink, comes in half gallon container."
+  },{
+    "_id": {
+      "$oid": "5f21d49c1480013df87ec544"
+    },
+    "title": "Aguas Frescas Cantaloupe",
+    "price": "3.89",
+    "quantity": "17",
+    "img": "AFCantaloupe.jpg",
+    "description": "Your friends and family will love this refreshing drink, comes in half gallon container."
+  },{
+    "_id": {
+      "$oid": "5f21d5251480013df87ec545"
+    },
+    "title": "Aguas Frescas Cucumber Lime",
+    "price": "3.89",
+    "quantity": "15",
+    "img": "AFCucumberLime.jpg",
+    "description": "Your friends and family will love this refreshing drink, comes in half gallon container."
+  },{
+    "_id": {
+      "$oid": "5f21d5ae1480013df87ec546"
+    },
+    "title": "Aguas Frescas Stawberry",
+    "price": "3.89",
+    "quantity": "15",
+    "img": "AFStawberry.jpg",
+    "description": "Your friends and family will love this refreshing drink, comes in half gallon container."
+  },{
+    "_id": {
+      "$oid": "5f21d8b91480013df87ec547"
+    },
+    "title": "Fruit Pizza",
+    "price": "5.13",
+    "quantity": "15",
+    "img": "FruitPizza.jpg",
+    "description": "Enjoy this 12in fruit pizza as healthy dessert."
+  },{
+    "_id": {
+      "$oid": "5f21d9231480013df87ec548"
+    },
+    "title": "Tropical Fruit Basket",
+    "price": "12.99",
+    "quantity": "12",
+    "img": "TropicalFB.jpg",
+    "description": "Great Gift for everybody."
+  },{
+    "_id": {
+      "$oid": "5f21d9471480013df87ec549"
+    },
+    "title": "Bouquet Fruit Basket",
+    "price": "12.99",
+    "quantity": "12",
+    "img": "BouquetFB.jpg",
+    "description": "Great Gift for everybody."
+  }]

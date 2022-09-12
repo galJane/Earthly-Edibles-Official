@@ -1,0 +1,72 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+
+ <!-- Page Content -->
+ <div class="container">    
+    <div class="row">
+        
+        <%- include('layouts/sidebar.ejs')%> 
+
+        <div class="col-lg-9">           
+            
+        <br><br>
+            <div class="row">                
+
+             
+                <div class="col-md-12">
+                    <div class="card h-100">
+                        <a href="../images/<%= prod.img %>"><img class="card-img-top" src="../images/<%= prod.img %>" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href=""><%= prod.title %></a>
+                            </h4>
+                          
+                            <h5>$<%= prod.price %></h5> 
+                            <p>Quantity: <%= prod.quantity %></p>       
+                            <p><%= prod.description %></p>                  
+
+
+                             <!-- add to cart-->
+                           
+                             <form action="/add-cart" method="POST">
+                                <input type="hidden" name="id" value="<%= prod._id %>">
+                                <input type="hidden" name="catId" value="cat1">
+                                <button type ="submit" class="btn btn-info">Add to cart</button>
+                                </form>
+
+                        </div>                                     
+                    </div>
+                </div>
+
+            
+             
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<%- include('layouts/footer.ejs') %>
+
+
+<!--styling-->
+
+<style>
+
+    
+    .card-body {
+        background-image: url('/images/fabric.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color:blue;
+        
+    }
+   
+</style>

@@ -1,0 +1,42 @@
+<%- include('layouts/header.ejs') %>
+<%- include('layouts/navigation.ejs') %>
+
+<br></br>
+<div class="container">
+    <body class="text-center">
+        <form action="/submitSignin" method="POST">
+            <img class="mb-4" src="../images/floatingEarth.gif" width="50" height="50">
+            <h1 class="h3 mb-3 font-weight-normal">Please Sign in</h1>
+            <label for="inputEmail" class="sr-only">Email Address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" autofocus>
+
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password">
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me">
+                    Remember Me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+    </body>
+</div>
+
+
+
+<%- include('layouts/footer.ejs') %>
+
+
+
+<!--
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+</style>
+-->

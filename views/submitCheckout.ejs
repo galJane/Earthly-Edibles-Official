@@ -1,0 +1,95 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+
+<div class="container">
+    <br><br>
+<h1> Thank you for your order!</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Unit Price</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <% let totalPrice = 0;
+                   for (let z of end) {   %>
+      <tr>
+       
+     
+
+
+          <th scope="row" width="70"><a href="../images/<%= z.img %>"><img class="card-img-top"
+                src="../images/<%= z.img %>"></a></th>
+         
+
+        <td><%= z.title %></td>
+        <td><%= z.quantity %></td>
+        <td>$<%= z.price.toFixed(2) %></td>
+        <td>$<%= (z.quantity * z.price).toFixed(2) %></td>
+
+    
+        <% totalPrice = totalPrice + (z.quantity * z.price); %>
+      </tr>
+      <% } %>
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col">Total Price</th>
+        <th scope="col">$<%= totalPrice.toFixed(2) %></th>
+        <th scope="col"> </th>
+      </tr>
+      <% salesTax = totalPrice * (0.0625); %>
+
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col">Sales Tax</th>
+        <th scope="col">$<%= salesTax.toFixed(2) %></th>
+        <th scope="col"> </th>
+      </tr>
+      <% shipping = 5.00 %>
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col">Shipping</th>
+        <th scope="col">$<%= shipping.toFixed(2) %></th>
+        <th scope="col"> 
+      
+          
+          
+    </th>
+
+
+      <% grandTotal = (totalPrice + salesTax + shipping); %>
+
+      <tr>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col"> </th>
+        <th scope="col">Grand Total</th>
+        <th scope="col">$<%= grandTotal.toFixed(2) %></th>
+        <th scope="col"> 
+      
+          
+          
+    </th>
+      </tr>
+
+      
+
+
+    </tbody>
+  </table>
+
+</div>
+<%- include('layouts/footer.ejs') %>

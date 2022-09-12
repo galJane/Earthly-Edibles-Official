@@ -1,0 +1,118 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+
+    <%- include('layouts/sidebar.ejs')%>
+
+    <div class="col-lg-9">
+
+      <br><br>
+
+      <h4>Cart Details</h4>
+      <div class="row">
+
+
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Image</th>
+              <th scope="col">Item</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Unit Price</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <% let totalPrice = 0;
+                         for (let p of products) {   %>
+            <tr>
+              <% if (status == 0) { %>
+              <th scope="row" width="70"><a href="./images/<%= p.img %>"><img class="card-img-top"
+                    src="./images/<%= p.img %>"></a></th>
+              <% } %>
+
+              <% if (status == 1) { %>
+                <th scope="row" width="70"><a href="../images/<%= p.img %>"><img class="card-img-top"
+                      src="../images/<%= p.img %>"></a></th>
+                <% } %>
+
+              <td><%= p.title %></td>
+              <td><a href="/decrease/<%=p.id%>" class="btn btn-info"> - </a>&nbsp;<%= p.quantity %>&nbsp;<a href="/increase/<%=p.id%>" class="btn btn-info"> + </a></td>
+            
+               <!---  <td>$<%= p.price.toFixed(2) %></td> -->
+              <td>$<%= (p.quantity * p.price).toFixed(2) %></td>
+
+              <form action="/<%=p.id%>?_method=Delete" method="POST">
+                <td><button type="submit" class="btn btn-info">Delete</button></td>
+              </form>
+
+              <% totalPrice = totalPrice + (p.quantity * p.price); %>
+            </tr>
+            <% } %>
+            <tr>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col">Total Price</th>
+              <th scope="col">$<%= totalPrice.toFixed(2) %></th>
+              <th scope="col"> </th>
+            </tr>
+            <% salesTax = totalPrice * (0.0625); %>
+
+            <tr>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col">Sales Tax</th>
+              <th scope="col">$<%= salesTax.toFixed(2) %></th>
+              <th scope="col"> </th>
+            </tr>
+
+            <% grandTotal = (totalPrice + salesTax); %>
+
+            <tr>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col"> </th>
+              <th scope="col">Grand Total</th>
+              <th scope="col">$<%= grandTotal.toFixed(2) %></th>
+              <th scope="col"> 
+                <a href="/logUser"  class="btn btn-info">Checkout</a>
+                
+                
+          </th>
+            </tr>
+
+            
+
+
+          </tbody>
+        </table>
+
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<%- include('layouts/footer.ejs') %>
+
+
+<style>
+
+
+
+</style>

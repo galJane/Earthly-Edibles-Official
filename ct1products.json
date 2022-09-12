@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "5f1fc80672fe2b3f36bf3448"
+  },
+  "title": "Apples",
+  "price": "0.69",
+  "quantity": "100",
+  "img": "apple.jpg",
+  "description": "Treat your family to the healthy taste of Apples, sale per pound."
+},{
+  "_id": {
+    "$oid": "5f1fc9f0364ecf1334799d69"
+  },
+  "title": "Blueberries",
+  "price": "4.15",
+  "quantity": "112",
+  "img": "blueberry.jpg",
+  "description": "Create decadent meals with sweet and light Fresh Blueberries, sale per pint."
+},{
+  "_id": {
+    "$oid": "5f1fc9fc364ecf1334799d6a"
+  },
+  "title": "Orange",
+  "price": "0.69",
+  "quantity": "130",
+  "img": "orange.jpg",
+  "description": "Suitable for use in all kinds of sweet and savory dishes."
+},{
+  "_id": {
+    "$oid": "5f2129705283021714b67361"
+  },
+  "title": "Cantelope",
+  "price": "1.69",
+  "quantity": "156",
+  "img": "cantelope.jpg",
+  "description": "Treat yourself to the refreshing flavor of a fresh Cantaloupe."
+},{
+  "_id": {
+    "$oid": "5f2129975283021714b67362"
+  },
+  "title": "Nectarines",
+  "price": "0.79",
+  "quantity": "180",
+  "img": "nectarine.jpg",
+  "description": "Treat yourself to the refreshing flavor of a fresh Nectarines."
+},{
+  "_id": {
+    "$oid": "5f2129b45283021714b67363"
+  },
+  "title": "Peaches",
+  "price": "0.75",
+  "quantity": "170",
+  "img": "peach.jpg",
+  "description": "Treat yourself to the refreshing flavor of a fresh Peaches."
+},{
+  "_id": {
+    "$oid": "5f2129d75283021714b67364"
+  },
+  "title": "Pears",
+  "price": "0.89",
+  "quantity": "190",
+  "img": "pear.jpg",
+  "description": "Savor the sweet taste of Pears. "
+},{
+  "_id": {
+    "$oid": "5f2129f75283021714b67365"
+  },
+  "title": "Raspberries",
+  "price": "3.56",
+  "quantity": "170",
+  "img": "raspberry.jpg",
+  "description": "Relish in the sweet, light flavor of Raspberries, sale per pint."
+},{
+  "_id": {
+    "$oid": "5f212a215283021714b67366"
+  },
+  "title": "Watermelon",
+  "price": "4.99",
+  "quantity": "190",
+  "img": "watermelon.jpg",
+  "description": "Savor the sweet taste of Watermelon."
+},{
+  "_id": {
+    "$oid": "5f212a705283021714b67367"
+  },
+  "title": "Strawberries",
+  "price": "2.49",
+  "quantity": "160",
+  "img": "strawberry.jpg",
+  "description": "The sweet, juicy flavor of Fresh Strawberries make them a refreshing and delicious treat, sale per pound."
+}]

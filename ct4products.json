@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "5f25098a5897fbdbde8051df"
+  },
+  "title": "Walnuts",
+  "price": "5.99",
+  "quantity": "100",
+  "img": "walnuts.jpg",
+  "description": "A great addition to homemade bread, price per pound.",
+  "recipe": "Banana Nut Bread",
+  "img2": "bananabread.jpg",
+  "url": "https://www.allrecipes.com/recipe/6777/banana-nut-bread-i/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%203"
+},{
+  "_id": {
+    "$oid": "5f250a8d71eae6524cab9bf8"
+  },
+  "title": "Almond  ",
+  "price": "4.99",
+  "quantity": "100",
+  "img": "almond.jpg",
+  "description": "Add it to your favorite salad, price per pound.",
+  "recipe": "Almond shake",
+  "img2": "almondShake.jpg",
+  "url": "https://www.allrecipes.com/recipe/246613/almond-berry-smoothie/?internalSource=hub%20recipe&referringContentType=Search"
+},{
+  "_id": {
+    "$oid": "5f250a9f71eae6524cab9bf9"
+  },
+  "title": "Hazelnuts",
+  "price": "5.99",
+  "quantity": "100",
+  "img": "hazelnut.jpg",
+  "description": "Add it to your favorite smoothie, price per pound.",
+  "recipe": "Hazelnut cookies",
+  "img2": "hazelnutCookie.jpg",
+  "url": "https://www.allrecipes.com/recipe/6772/hazelnut-chocolate-chip-scones/?internalSource=hub%20recipe&referringContentType=Search&clickId=cardslot%203"
+},{
+  "_id": {
+    "$oid": "5f250ab671eae6524cab9bfa"
+  },
+  "title": "Macadamia nuts",
+  "price": "5.99",
+  "quantity": "100",
+  "img": "macadamia2.jpg",
+  "description": "Good alternative to walnuts, price per pound.",
+  "recipe": "Macadamia nut brownies",
+  "img2": "macBrownies.jpg",
+  "url": "https://www.tasteofhome.com/recipes/simple-macadamia-nut-fudge/"
+},{
+  "_id": {
+    "$oid": "5f250ac371eae6524cab9bfb"
+  },
+  "title": "Pecans",
+  "price": "3.99",
+  "quantity": "100",
+  "img": "pecan.jpg",
+  "description": "Great on a pie, price per pound.",
+  "recipe": "Pecan pie",
+  "img2": "pecanPie.jpg",
+  "url": "https://www.kingarthurbaking.com/recipes/lyles-golden-pecan-pie-recipe"
+},{
+  "_id": {
+    "$oid": "5f250ad371eae6524cab9bfc"
+  },
+  "title": "Peanuts",
+  "price": "5.99",
+  "quantity": "100",
+  "img": "peanuts.jpg",
+  "description": "Great snack between meals, price per pound.",
+  "recipe": "Peanut sauce",
+  "img2": "peanutSauce.jpg",
+  "url": "https://www.tasteslovely.com/asian-peanut-sauce-and-salad-dressing/"
+},{
+  "_id": {
+    "$oid": "5f250ae471eae6524cab9bfd"
+  },
+  "title": "Pumpkin seeds",
+  "price": "2.99",
+  "quantity": "100",
+  "img": "pumpkin.jpg",
+  "description": "Great use of seeds after carving out a pumpkin for haloween, price per pound.",
+  "recipe": "Roasted pumpking seeds",
+  "img2": "roastedPumpkin.jpg",
+  "url": "https://www.seriouseats.com/recipes/2013/10/basic-roasted-pumpkin-seed-recipe.html"
+},{
+  "_id": {
+    "$oid": "5f250af471eae6524cab9bfe"
+  },
+  "title": "Sunflower Seeds",
+  "price": "3.45",
+  "quantity": "100",
+  "img": "sunflower.jpg",
+  "description": "Not just for the birds, price per pound.",
+  "recipe": "Sunflower bread",
+  "img2": "sunflowerBread.jpg",
+  "url": "https://www.tablespoon.com/recipes/sunflower-seed-bread/0e20609d-2438-4a1d-8eaf-09abef28d4b5"
+}]

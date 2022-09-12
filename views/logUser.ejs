@@ -1,0 +1,71 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+
+    
+
+    <div class="col-lg-4">
+
+  <br><br>
+   <h4>Start check out</h4>
+      
+    
+        <p>Don't want to create an account?  You can checkout as a guest.</p>
+        <br>
+        
+        <a href="/checkout" class="btn btn-info">Continue without an account</a>
+
+        
+
+
+      
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+    <div class="col-lg-4">
+   
+
+    <form action="/loggedUser" method="POST">
+      <br>
+       
+          <br><h4>Returning Customer</h4>
+          <p>Have an account? Sign in as a returning customer</p>
+        
+        <label for="userEmail" class="sr-only">Email Address</label>
+        <input type="email" id="userEmail" class="form-control" placeholder="Email Address" name="userEmail" autofocus required>
+
+        <label for="userPassword" class="sr-only">Password</label>
+        <input type="password" id="userPassword" class="form-control" placeholder="Password" name="userPassword" required>
+
+       
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in to checkout</button>
+    </form>
+
+
+
+
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<%- include('layouts/footer.ejs') %>
+
+
+<style>
+.col-lg-4 {
+  width: 200px;
+  height: 400px;
+}
+
+
+</style>

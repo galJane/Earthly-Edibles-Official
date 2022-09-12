@@ -1,0 +1,146 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+
+<div class="container">
+
+    <br></br>
+
+    <!-- title row -->
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="text-align: center;">Developers</h1>
+        </div>
+    </div>
+
+    <br></br>
+
+    <!-- content row -->
+    <div class="row">
+
+        <!-- dan column -->
+        <div class="col-md-4">
+            <div class="card bg-light">
+                <h1 style="text-align: center;">Dan</h1>
+                <img src="../images/IMG_6585.JPG" alt="..." width="200" height="200">
+                <div class="card-body">
+                    Computer Science Major Junior
+                </div>
+                <a href="http://localhost:1000" class="card-link">Dan.com</a>
+            </div>
+        </div>
+
+        <!-- jane column -->
+        <div class="col-md-4">
+            <div class="card bg-light">
+                <h1 style="text-align: center;">Jane</h1>
+                <img src="../images/profile.JPG" alt="..." width="200" height="200">
+                <div class="card-body">
+                    Computer Science Major Junior
+                </div>
+                <a href="http://localhost:4000" class="card-link">Jane.com</a>
+            </div>
+        </div>
+
+        <!-- tyler column -->
+        <div class="col-md-4">
+            <div class="card bg-light">
+                <h1 style="text-align: center;">Tyler</h1>
+                <img src="../images/IMG_3467.JPG" alt="..." width="200" height="200">
+                <div class="card-body">
+                    Computer Science Major Senior
+                </div>
+                <a href="http://localhost:3000" class="card-link">Tyler.com</a>
+            </div>
+        </div>
+    </div>
+
+    <br></br>
+
+    <form action="/submitContact" method="POST">
+        <section class="mb-4">
+            <!-- start of first row -->
+
+            <!-- start of the contact me col -->
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- section phrases -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 class="text-center w-responsive mx-auto mb-5">Contact Us</h1>
+
+                                <!-- begin row -->
+                                <div class="row">
+                                    <!-- begin column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="name" name="name" class="form-control">
+                                            <label for="name" class="">Name</label>
+                                        </div>
+                                    </div>
+                                    <!-- end column -->
+
+                                    <!-- begin column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="phone" name="phone" class="form-control">
+                                            <label for="phone" class="">Phone</label>
+                                        </div>
+                                    </div>
+                                    <!-- end column -->
+                                </div>
+                                <!-- end row -->
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="email" name="email" class="form-control">
+                                            <label for="email" class="">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- begin row -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="subject" name="subject" class="form-control">
+                                            <label for="subject" class="">Subject</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+
+                                <!-- begin row -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="message" name="message" class="form-control">
+                                            <label for="message" class="">Message</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end row -->
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- map row -->
+                    <div id="map-container-section" class="z-depth-1-half map-container-section mb-4">
+                        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                            style="width: 500px; height: 500px; "
+                            src="https://maps.google.com/maps?q=san%20antonio&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+    </form>
+    </section>
+</div>
+
+
+
+<%- include('layouts/footer.ejs') %>

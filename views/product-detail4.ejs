@@ -1,0 +1,341 @@
+<%- include('layouts/header.ejs') %>
+
+<%- include('layouts/navigation.ejs') %>
+
+<!-- Page Content -->
+
+<!--container-->
+
+<div class="container">    
+  
+  <!--row-->
+  <div class="row">
+      
+      <%- include('layouts/sidebar.ejs')%> 
+
+      <div class="col-lg-9 h-100">           
+          
+      <br><br>
+          <!--row-->
+          <div class="containers row">                
+
+              <!--card col-md-12-->
+              <div class="card col-md-12">
+
+                  <!--cardfront h100-->
+                  <div class="cardfront h-100">
+                    <a href="../images/<%= prod.img %>"><img class="card-img-top" src="../images/<%= prod.img %>" alt=""></a>
+                     
+                       <!--card body-->
+                       <div class="card-body-front">
+                          <h4 class="card-title">
+                              <a href=""><%= prod.title %></a>
+                          </h4>
+                        
+                          <h5>$<%= prod.price %></h5>  
+                          <p>Quantity: <%= prod.quantity %></p>      
+                          <p><%= prod.description %></p>                  
+                         
+
+                          <!-- add to cart-->
+
+                        
+                         <button type="happy" style="border: 0; background: transparent" class="flex-end">
+                            <img src="../images/stillEarth.png" width="50" height="50" alt="earth" id="rotate"/>
+                        </button>
+
+                         
+                          <form action="/add-cart" method="POST">
+                              <input type="hidden" name="id" value="<%= prod._id %>">
+                              <input type="hidden" name="catId" value="cat4">
+                              <button type ="submit" class="btn btn-info">Add to cart</button>
+                              </form>
+ 
+                      </div>   
+                      <!-- card body-->
+                
+                         
+                  </div>
+                  <!--cardfront h100-->
+
+                  <!--cardback h-100-->
+                  <div class="cardback h-100">
+                   
+                    <a href="../images/<%= prod.img2 %>"><img class="card-img-top" src="../images/<%= prod.img2 %>" alt=""></a>
+                     
+                       <!--card body-->
+                      
+                       <div class="card-body-back">
+                        <h4 class="card-title">
+                          <a href=""><%= prod.recipe %></a>
+                      </h4>
+                       
+                       
+                       <a href="<%= prod.url %>">Click to make</a>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                        
+                         <br>
+                         <br>
+                          <button type="happier" style="border: 0; background: transparent">
+                            <img src="../images/stillEarth.png" width="50" height="50" alt="earth"id="rerotate" />
+                        </button>
+                        <p></p>
+                          <!-- add to cart-->
+                         
+                          
+
+                      </div>   
+                      <!-- card body-->
+                
+                         
+                  </div>
+
+
+                  <!--cardback h-100-->
+
+                
+
+              </div>
+              <!---->
+
+
+              </div>
+              <!-- col-md-12-->
+
+        
+           
+          </div>
+          <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+   
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<%- include('layouts/footer.ejs') %>
+
+<!-- styling -->
+
+
+<script>
+
+  
+$('#rotate').click(function(){
+   $('.card').toggleClass('flipped');
+});
+
+
+$('#rerotate').click(function(){
+   $('.card').toggleClass('flipped');
+});
+
+</script>
+
+
+<style>
+
+
+.card-img-top{
+  max-width: 1000px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%
+
+}
+
+
+.card-body-front {
+        background-image: url('/images/fabric.jpg');
+     
+        background-repeat: no-repeat;
+        color:blue;
+        padding:30px;
+
+    }
+
+    .card-body-back {
+        background-image: url('/images/fabric.jpg');
+       
+        background-repeat: repeat;
+        color:blue;
+        padding:10px;
+        
+    }
+
+
+/*cardfront*/
+ .cardfront {
+ 
+  backface-visibility: hidden;
+
+  
+
+}
+/*cardback*/
+.cardback {
+  position: absolute;
+  
+  transform: rotateY(180deg);
+  height: 95%;
+      width: 95%
+  
+  
+}
+
+.card{
+ transition: transform 0.8s;
+ 
+ transform-style: preserve-3d;
+  border: hidden;
+  
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+  
+}
+#rotate{
+    background-image: url("images/stillEarth.png");
+}
+
+
+.containers {
+  
+  background-color: transparent;
+  
+  display: grid;
+  perspective: 1000px;
+  position: relative;
+}
+
+
+
+/*rotate image background*/
+/*
+
+ 
+.col-md-12 {
+  background-color: transparent; 
+  perspective: 1000px;  
+}
+
+.col {
+  position: relative;
+ 
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 10px 0 rgba(90,90,90,0.2)
+}
+
+
+.col-md-12.flipped .col {   
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  
+  backface-visibility: hidden;
+}
+
+
+
+.card-back {
+
+  transform: rotateY(180deg);
+}
+
+
+
+
+.col-md-12 {
+  background-color: transparent; 
+  perspective: 1000px;  
+}
+
+.col {
+  position: relative;
+  
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 8px 10px 0 rgba(90,90,90,0.2)
+}
+
+
+.col-md-12.flipped .col {   
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  
+  backface-visibility: hidden;
+}
+
+
+
+.card-back {
+
+  transform: rotateY(180deg);
+}
+*/
+
+
+/*
+
+
+#rotate:hover {
+    animation :rotate(45deg);
+   
+   
+}
+
+#rotate{
+    background-image: url("images/stillEarth.png");
+}
+
+.card.flipped{
+    transform: rotateY(180deg);
+    
+    backface-visibility: hidden;
+  
+}
+
+
+.front{ 
+    position: absolute;
+   
+   
+}
+
+
+.back{ 
+    position: absolute;
+    
+   
+  
+}
+
+.card-body-front {
+        background-image: url('../images/fabric.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        color:blue;
+       
+        
+  
+       
+    }
+ 
+    <button type="submit" style="border: 0; background: transparent">
+                                    <img src="../images/stillEarth.png" width="50" height="50" alt="earth" id="rotate"/>
+                                </button>
+                                */
+</style>
